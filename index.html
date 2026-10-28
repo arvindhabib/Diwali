@@ -78,7 +78,7 @@ input:focus{outline:2px solid var(--gold);outline-offset:1px}
 <section class="sec" id="s2">
   <div class="dslot"></div>
   <h2>Iss Diwali, party manao</h2>
-  <p class="sub">A night of taash, fun people and zero reasons to leave early.</p>
+  <p class="sub">A night of games, unforgettable memories, great company, and zero reasons to leave early.</p>
 </section>
 
 <section class="sec" id="s3">
@@ -86,8 +86,8 @@ input:focus{outline:2px solid var(--gold);outline-offset:1px}
   <h2>The plan</h2>
   <div class="plan">
     <div class="row"><small>Date</small>Saturday, 7 November</div>
-    <div class="row"><small>Time</small>7 PM onwards</div>
-    <div class="row"><small>Food</small>Dinner included</div>
+    <div class="row"><small>Time</small>6 PM onwards</div>
+    <div class="row"><small>Food</small>Potluck - Bring your best dishes</div>
     <div class="row"><small>Where</small>Battelsesteenweg 249, Mechelen</div>
   </div>
   <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Diwali+Party&amp;dates=20261107T180000Z/20261107T230000Z&amp;location=Battelsesteenweg+249,+Mechelen&amp;details=Taash,+fun+people+and+zero+reasons+to+leave+early.">Add to Google Calendar</a>
@@ -106,7 +106,7 @@ input:focus{outline:2px solid var(--gold);outline-offset:1px}
   <h2>Rulebook</h2>
   <ol class="rules">
     <li>Traditional is mandatory. No entry without it.</li>
-    <li>Phones down during aarti. Selfies up right after.</li>
+    <li>Phones down during games. Selfies up at all other times.</li>
     <li>Come hungry. Leave happy. Leave late.</li>
     <li>Rulebreakers pay fine.</li>
   </ol>
@@ -193,7 +193,9 @@ tick();setInterval(tick,1000);
 
 /* RSVP */
 var STATUS={"Pakka":"Pakka?! That’s the spirit. Seat saved.","Shayad":"Shayad? That’s just shayari. Decide karo, yaar.","Iss baar not possible":"Aww. The diyas will miss you. Mithai hum bacha lenge."};
-var ROLE={"DJ Saab":"The aux cord is a big responsibility. No one-song loops, please.","Decor Paglu":"Fairy lights are your love language.","Chakna Champion":"The real MVP. Bhookh is watching.","Bartender":"Pour with love, not with panic.","Game Master":"Taash, rules, drama. All yours.","Paparazzi":"Every angle, every candid. Lens ready.","Chief Guest (just here to vibe)":"Just here to vibe. Respect. Ribbon-cutting at 8."};
+var ROLE = {"🎧 DJ Saab": "The aux cord is a big responsibility. No one-song loops, please.","🎥 Reel Banane Aaya": "Not attending the event, just collecting content for the next viral reel.","🗣️ Gossip Minister": "Knows everyone's story before they do. Breaking news delivered faster than Wi-Fi.","🍿 Chakna Champion": "The real MVP. Bhookh is watching.","🍹 Bartender": "Pour with love, not with panic.","🎲 Game Master": "Taash, rules, drama. All yours.","📸 Paparazzi": "Every angle, every candid. Lens ready.",
+  "🕺 Chief Guest (just here to vibe)": "Just here to vibe. Respect. Ribbon-cutting at 8."
+};
 var st="",role="",wa=$("wa");
 function chips(id,map,onPick){
   var box=$(id);
